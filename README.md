@@ -14,3 +14,13 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+# Containerizing Flutter-web App with Docker
+Run the following commands to build and run the image.
+```
+docker build . -t flutter_docker
+```
+```
+sudo docker run -i -p 8080:5000 -td flutter_docker
+```
+Dockerfile and server\.sh was taken from [this link](https://blog.logrocket.com/containerizing-flutter-web-apps-with-docker/)
